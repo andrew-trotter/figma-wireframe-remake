@@ -1,0 +1,114 @@
+/* --- TYPOGRAPHY --- */
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.nav-bar li {
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.45em;  
+  letter-spacing: -0.015em;
+}
+
+.hero-e h1 {
+  font-size: 3.5em; 
+}
+
+.body-b h1 {
+  font-size: 3em;
+  max-width: 40vw;
+}
+
+.body-b h4 {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.45em;
+}
+
+/* --- LAYOUT --- */
+
+.nav-bar{
+  display: flex;
+  
+  /* border: 3px solid green; */
+  justify-content: space-between;  
+}
+
+.nav-items {
+  display: flex;
+  justify-content:space-evenly;
+  padding: 0;
+  /* border: 2px solid purple;   */
+}
+
+.nav-item {
+  border: 1px solid red;
+  padding-inline: 0.5em;
+  /* margin-inline: 0.5em; */
+  align-self: center;
+}
+
+.nav-bar ul {
+  margin: 0;
+}
+
+.nav-button {
+  width: 100%;
+}
+
+.hero-e {
+  aspect-ratio: 16/9;
+  width: 100vw;
+  text-align: center;
+  border: 2px solid blue;
+}
+
+.hero-e video {
+
+}
+
+.body-b {
+  display: grid;
+  justify-content: center;
+  column-gap: 10em;
+  padding-inline: 2em;
+  padding-block: 3em;
+  border: 1px solid red;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+.body-b :first-child {
+  grid-column: span 2
+}
+
+.text-container {
+  padding-inline: 2em ;
+}
+
+/* --- UTILITY --- */
+
+button {
+  border-radius: 5px;
+  padding-block: 1em;
+  padding-inline: 3em;
+}
+
+.btn-primary {
+  background-color: #18A0FB;
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #18A0FB;
+  border: 1px solid #18A0FB;
+}
